@@ -1,0 +1,18 @@
+### Starting build.
+# Target: src/main.ml.depends, tags: { annot, bin_annot, debug, extension:ml, file:src/main.ml, ocaml, ocamldep, quiet, traverse }
+/home/comp/.opam/4.02.3/bin/ocamlfind ocamldep -modules src/main.ml > src/main.ml.depends
+# Target: src/hello.mli.depends, tags: { annot, bin_annot, debug, extension:mli, file:src/hello.mli, ocaml, ocamldep, quiet, traverse }
+/home/comp/.opam/4.02.3/bin/ocamlfind ocamldep -modules src/hello.mli > src/hello.mli.depends # cached
+# Target: src/hello.cmi, tags: { annot, bin_annot, byte, compile, debug, extension:mli, file:src/hello.mli, interf, ocaml, quiet, traverse }
+/home/comp/.opam/4.02.3/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I src -o src/hello.cmi src/hello.mli # cached
+# Target: src/main.cmo, tags: { annot, bin_annot, byte, compile, debug, extension:cmo, extension:ml, file:src/main.cmo, file:src/main.ml, implem, ocaml, quiet, traverse }
+/home/comp/.opam/4.02.3/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I src -o src/main.cmo src/main.ml
+# Target: src/hello.ml.depends, tags: { annot, bin_annot, debug, extension:ml, file:src/hello.ml, ocaml, ocamldep, quiet, traverse }
+/home/comp/.opam/4.02.3/bin/ocamlfind ocamldep -modules src/hello.ml > src/hello.ml.depends
+# Target: src/hello.cmx, tags: { annot, bin_annot, compile, debug, extension:cmx, extension:ml, file:src/hello.cmx, file:src/hello.ml, implem, native, ocaml, quiet, traverse }
+/home/comp/.opam/4.02.3/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -I src -o src/hello.cmx src/hello.ml
+# Target: src/main.cmx, tags: { annot, bin_annot, compile, debug, extension:cmx, extension:ml, file:src/main.cmx, file:src/main.ml, implem, native, ocaml, quiet, traverse }
+/home/comp/.opam/4.02.3/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -I src -o src/main.cmx src/main.ml
+# Target: src/main.native, tags: { annot, bin_annot, debug, dont_link_with, extension:native, file:src/main.native, link, native, ocaml, program, quiet, traverse }
+/home/comp/.opam/4.02.3/bin/ocamlfind ocamlopt -linkpkg -g -linkpkg src/hello.cmx src/main.cmx -o src/main.native
+# Compilation successful.

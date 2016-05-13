@@ -1,0 +1,43 @@
+"src/hello.ml" 1 0 4 "src/hello.ml" 1 0 11
+type(
+  string
+)
+ident(
+  def message "src/hello.ml" 2 22 22 "src/hello.ml" 1 0 -1
+)
+"src/hello.ml" 1 0 14 "src/hello.ml" 1 0 21
+type(
+  string
+)
+"src/hello.ml" 2 22 26 "src/hello.ml" 2 22 35
+type(
+  unit -> unit
+)
+ident(
+  def print_msg "src/hello.ml" 2 22 62 "src/hello.ml" 1 0 -1
+)
+"src/hello.ml" 2 22 36 "src/hello.ml" 2 22 38
+type(
+  unit
+)
+"src/hello.ml" 2 22 41 "src/hello.ml" 2 22 54
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.print_endline
+)
+"src/hello.ml" 2 22 55 "src/hello.ml" 2 22 62
+type(
+  string
+)
+ident(
+  int_ref message "src/hello.ml" 1 0 4 "src/hello.ml" 1 0 11
+)
+"src/hello.ml" 2 22 41 "src/hello.ml" 2 22 62
+call(
+  tail
+)
+type(
+  unit
+)

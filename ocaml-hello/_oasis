@@ -1,0 +1,15 @@
+OASISFormat: 0.4
+OCamlVersion: >= 4.02.3
+Name:        helloworld
+Version:     0.1
+Synopsis:    hello world with OCaml and OASIS
+Authors:     ckndev
+License:     MIT
+Plugins:      META (0.4), DevFiles (0.4)
+
+Executable helloworld
+  Path:       src
+  BuildTools: ocamlbuild
+  MainIs:     main.ml
+  install: true
+  CompiledObject: native

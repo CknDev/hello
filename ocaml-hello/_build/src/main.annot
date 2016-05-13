@@ -1,0 +1,22 @@
+"src/main.ml" 2 11 14 "src/main.ml" 2 11 16
+type(
+  unit
+)
+"src/main.ml" 3 19 21 "src/main.ml" 3 19 30
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Hello.print_msg
+)
+"src/main.ml" 3 19 30 "src/main.ml" 3 19 32
+type(
+  unit
+)
+"src/main.ml" 3 19 21 "src/main.ml" 3 19 32
+call(
+  stack
+)
+type(
+  unit
+)
